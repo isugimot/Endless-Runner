@@ -12,7 +12,7 @@ class Bonus extends Phaser.Physics.Arcade.Sprite {
 
     update() {
         if(this.x < - this.width){
-            this.parentScene.addRocket(this.parent, this.velocity);
+            this.parentScene.addBonus(this.parent, this.velocity);
             this.destroy;
         }
     }
